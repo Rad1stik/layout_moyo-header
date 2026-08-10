@@ -1,4 +1,13 @@
-* {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -11,37 +20,37 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
 }
 
-header > a {
+.header__logo {
   width: 40px;
   height: 40px;
   margin-left: 50px;
 }
 
-header > a img {
+.header__logo img {
   width: 40px;
   height: 40px;
 }
 
-nav {
+.nav {
   margin-left: auto;
   margin-right: 50px;
 }
 
-nav ul {
+.nav__list {
   display: flex;
   list-style: none;
 }
 
-nav li:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 20px;
 }
 
-nav a {
+.nav__link {
   position: relative;
   display: flex;
   align-items: center;
@@ -56,15 +65,15 @@ nav a {
   line-height: 100%;
 }
 
-nav a:hover {
+.nav__link:hover {
   color: var(--blue-color);
 }
 
-nav a.is-active {
+.nav__link.is-active {
   color: var(--blue-color);
 }
 
-nav a.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
